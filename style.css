@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e1bee7 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Glassmorphism Effect Container */
+.login-container, .signUp-container {
+    width: 420px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(161, 5, 175, 0.1);
+    transition: transform 0.3s ease;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    color: #a105af;
+    margin-bottom: 30px;
+}
+
+.user, .email, .pswd {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+    margin-left: 5px;
+}
+
+input {
+    padding: 12px 15px;
+    border: 1.5px solid #eee;
+    border-radius: 12px;
+    outline: none;
+    background: #fdfdfd;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #a105af;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(161, 5, 175, 0.2);
+}
+
+.submit-container {
+    margin-top: 10px;
+}
+
+.submit {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(45deg, #c020ce, #a105af);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(192, 32, 206, 0.3);
+}
+
+.submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(192, 32, 206, 0.4);
+    filter: brightness(1.1);
+}
+
+.submit:active {
+    transform: scale(0.98);
+}
+
+.signPage, .loginPage {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #777;
+}
+
+.signPage span, .loginPage span {
+    color: #a105af;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.signPage span:hover, .loginPage span:hover {
+    text-decoration: underline;
+}
+
+
+
+#welcome-body{
+    background: linear-gradient(135deg, #a1349a 0%, #640275 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-container {
+    width: 600px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(161, 5, 175, 0.1);
+    text-align: center;
+}
+
+.welcome-container h1 {
+    font-size: 36px;
+    color: #a105af;
+    margin-bottom: 20px;
+}
+
+.welcome-container p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+
+/* 📱 Responsive Design */
+@media (max-width: 480px) {
+    .login-container, .signUp-container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+}
